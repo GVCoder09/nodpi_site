@@ -1,3 +1,8 @@
 {
-  "latest_version" : "2.1"
+  "nodpi" : {
+    "latest_version" : "2.1"
+  },
+  "nodpi4android" : {
+    "latest_version" : "2.0"
+  }
 }
