@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoDPI - Say NO to blocking!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="glass-dark header-container">
+            <div class="logo-container">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>NoDPI</h1>
+                    <p><i>Say NO to blocking!</i></p>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#installation">Installation</a></li>
+                    <li><a href="#links">Links</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section id="home" class="hero">
+            <div class="glass" style="padding: 40px; position: relative; z-index: 2;">
+                <h1>Bypass DPI Blocking</h1>
+                <p>NoDPI is a utility designed to bypass DPI (Deep Packet Inspection) blocking. It modifies network
+                    packets to "trick" DPI systems and restore access to blocked websites and services.</p>
+
+                <div class="badges">
+                    <div class="badge visitors glass">
+                        <i class="fas fa-eye"></i>
+                        <span><img src="https://visitor-badge.laobi.icu/badge?page_id=GVCoder09.NoDPI"></span>
+                    </div>
+                    <div class="badge license glass">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>GPL-3.0 License</span>
+                    </div>
+                    <div class="badge release glass">
+                        <i class="fas fa-tag"></i>
+                        <span><img src="https://img.shields.io/github/v/release/GVCoder09/nodpi"></span>
+                    </div>
+                    <div class="badge downloads glass">
+                        <i class="fas fa-download"></i>
+                        <span><img src="https://img.shields.io/github/downloads/GVCoder09/nodpi/total.svg"></span>
+                    </div>
+                    <div class="badge stars glass">
+                        <i class="fas fa-star"></i>
+                        <span><img src="https://img.shields.io/github/stars/GVCoder09/nodpi.svg?style=dark"></span>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <a href="https://github.com/GVCoder09/NoDPI/releases/latest" class="btn btn-primary"
+                        target="_blank">
+                        <i class="fas fa-download"></i> Download Latest Release
+                    </a>
+                    <a href="https://github.com/GVCoder09/NoDPI" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-title">
+                <i class="fas fa-info-circle"></i>
+                <h2>About NoDPI</h2>
+            </div>
+
+            <div class="glass content-box">
+                <p>NoDPI is a utility designed to bypass DPI (Deep Packet Inspection). DPI is a technology for
+                    inspecting network packets based on their content to regulate and filter traffic. It is often used
+                    by internet service providers to censor and block access to certain web resources and protocols.</p>
+
+                <p>The goal of this program is to "trick" DPI by modifying network packets. This utility was developed
+                    primarily for Russian users as a simpler (but less powerful) replacement for similar tools. In most
+                    cases, it gets the job done; in particular, it allows you to use YouTube without any problems.</p>
+
+                <div class="alert alert-note">
+                    <i class="fas fa-info-circle"></i>
+                    <div>
+                        <strong>Note:</strong> This project is a fork of the repository <a
+                            href="https://github.com/theo0x0/nodpi"
+                            style="color: #74b9ff;">https://github.com/theo0x0/nodpi</a> and is developed independently.
+                        Do not confuse with <a href="https://github.com/raspabamos/nodpi"
+                            style="color: #74b9ff;">https://github.com/raspabamos/nodpi</a>!
+                    </div>
+                </div>
+
+                <div class="alert alert-warning">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <div>
+                        <strong>Important:</strong> This version is for desktop systems. <strong>The Android version is
+                            available here:</strong> <a href="https://github.com/GVCoder09/NoDPI4Android"
+                            style="color: #f1c40f;">https://github.com/GVCoder09/NoDPI4Android</a>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="glass card">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Open Source</h3>
+                        <p>NoDPI is completely open source, licensed under GPL-3.0. The entire code is written in Python
+                            using only the standard library.</p>
+                    </div>
+
+                    <div class="glass card">
+                        <div class="card-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Cross-Platform</h3>
+                        <p>Works on Windows, Linux, and macOS. An Android version is also available separately. No
+                            administrator rights required.</p>
+                    </div>
+
+                    <div class="glass card">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Safe & Private</h3>
+                        <p>NoDPI does not collect or send any data about you, does not use third-party programs, and
+                            does not interfere with system processes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <div class="section-title">
+                <i class="fas fa-cogs"></i>
+                <h2>How It Works</h2>
+            </div>
+
+            <div class="glass content-box">
+                <p>NoDPI launches a proxy server on your computer through which you direct HTTP(S) traffic. The program
+                    intercepts ClientHello of outgoing connections and fragments them according to one of the following
+                    methods:</p>
+
+                <div class="cards">
+                    <div class="glass-dark card">
+                        <div class="card-icon">
+                            <i class="fas fa-random"></i>
+                        </div>
+                        <h3>Random Fragmentation</h3>
+                        <p>ClientHello is divided into several parts of random length. Each part is glued with the
+                            prefixes of the type of ClientHello and then all this is sent in one package.</p>
+                    </div>
+
+                    <div class="glass-dark card">
+                        <div class="card-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3>Fragmentation by SNI</h3>
+                        <p>ClientHello is divided into 4 parts: to SNI, the first and second half of SNI, and all that
+                            is after it. The header indicating the type ClientHello is attached to each part and then
+                            all this is sent in one bag.</p>
+                    </div>
+                </div>
+
+                <p>Regardless of the method, the TLS version is replaced by version 1.3. All this together allows you to
+                    bypass DPI blocking. Apparently DPI does not yet have the necessary capacities to unravel this
+                    "ball" and simply ignores such traffic.</p>
+
+                <div class="alert alert-important">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <div>
+                        <strong>Important:</strong> NoDPI only works with HTTPS traffic. It can also handle HTTP
+                        traffic, but purely for compatibility - sites working through this outdated protocol are
+                        practically not subject to unlocking.
+                    </div>
+                </div>
+
+                <div class="alert alert-warning">
+                    <i class="fas fa-ban"></i>
+                    <div>
+                        <strong>Sites currently unavailable via NoDPI:</strong> As of October 2025, Instagram and
+                        Facebook were not unlockable with NoDPI. All sites blocked by IP address are also unavailable.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="installation">
+            <div class="section-title">
+                <i class="fas fa-download"></i>
+                <h2>Quick Installation Guide</h2>
+            </div>
+
+            <div class="glass content-box">
+                <p>Follow these simple steps to get NoDPI up and running:</p>
+
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-content">
+                            <h4>Download the Latest Release</h4>
+                            <p>Download the latest version for your OS from <a
+                                    href="https://github.com/GVCoder09/NoDPI/releases/latest"
+                                    style="color: #74b9ff;">the
+                                    Releases page</a> and unzip it.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-content">
+                            <h4>Run NoDPI</h4>
+                            <p>Go to the directory with the unzipped utility and run it with the appropriate command:
+                            </p>
+                            <div class="code-block">
+                                <code>nodpi.exe --blacklist blacklist.txt</code> <span
+                                    style="color: rgba(255,255,255,0.7)"># Windows</span><br>
+                                <code>./nodpi --blacklist ./blacklist.txt</code> <span
+                                    style="color: rgba(255,255,255,0.7)"># Linux/Mac</span>
+                            </div>
+                            <p>If the blacklist file is not specified, the program will search for the file
+                                <code>blacklist.txt</code> in the current directory by default.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-content">
+                            <h4>Configure Proxy Settings</h4>
+                            <p>In your browser or system settings, set the proxy to:</p>
+                            <div class="code-block">
+                                <code>127.0.0.1:8881</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-content">
+                            <h4>Enjoy Unrestricted Access!</h4>
+                            <p>You should now be able to access blocked websites. Test by visiting a site that was
+                                previously blocked.</p>
+                            <div class="alert alert-warning">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <div>
+                                    <strong>Important:</strong> Don't forget to disable the proxy in your system or
+                                    browser settings after closing the program!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <h3 style="margin-bottom: 15px; color: white;">Add to Startup (Optional)</h3>
+                    <p>You can add NoDPI to startup on Windows or Linux:</p>
+                    <div class="code-block">
+                        <code>nodpi --install</code>
+                    </div>
+                    <p>This will add the program to startup via the Windows registry or via <code>systemd</code> in
+                        Linux. Make sure the file <code>blacklist.txt</code> is located next to the executable file.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="links">
+            <div class="section-title">
+                <i class="fas fa-external-link-alt"></i>
+                <h2>Links & Alternatives</h2>
+            </div>
+
+            <div class="glass content-box">
+                <h3 style="margin-bottom: 20px; color: white;">Useful Links</h3>
+                <div class="buttons">
+                    <a href="https://github.com/GVCoder09/NoDPI" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i> GitHub Repository
+                    </a>
+                    <a href="https://github.com/GVCoder09/NoDPI/issues" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-bug"></i> Report Issues
+                    </a>
+                    <a href="https://github.com/GVCoder09/NoDPI4Android" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-android"></i> Android Version
+                    </a>
+                </div>
+
+                <div style="margin-top: 40px;">
+                    <h3 style="margin-bottom: 20px; color: white;">Alternative DPI Bypass Tools</h3>
+                    <p>If NoDPI doesn't work for your specific case, consider these alternatives:</p>
+
+                    <div class="cards">
+                        <div class="glass-dark card">
+                            <h3>GoodbyeDPI</h3>
+                            <p>by @ValdikSS (for Windows)</p>
+                        </div>
+
+                        <div class="glass-dark card">
+                            <h3>zapret</h3>
+                            <p>by @bol-van (for macOS, Linux and Windows)</p>
+                        </div>
+
+                        <div class="glass-dark card">
+                            <h3>Green Tunnel</h3>
+                            <p>by @SadeghHayeri (for macOS, Linux and Windows)</p>
+                        </div>
+
+                        <div class="glass-dark card">
+                            <h3>PowerTunnel</h3>
+                            <p>by @krlvm (for Windows, macOS and Linux)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="glass-dark" style="padding: 30px;">
+            <div class="footer-links">
+                <a href="https://github.com/GVCoder09/NoDPI" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://github.com/GVCoder09/NoDPI/releases/latest" target="_blank">
+                    <i class="fas fa-download"></i> Downloads
+                </a>
+                <a href="https://github.com/GVCoder09/NoDPI/issues" target="_blank">
+                    <i class="fas fa-bug"></i> Issues
+                </a>
+                <a href="https://github.com/GVCoder09/NoDPI/blob/main/README.md" target="_blank">
+                    <i class="fas fa-file-alt"></i> Full README
+                </a>
+            </div>
+
+            <p>NoDPI is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.txt"
+                    style="color: rgba(255,255,255,0.7);">GNU General Public License v3.0</a></p>
+            <p style="margin-top: 15px; font-size: 12px; color: rgba(255,255,255,0.5);">
+                <i class="fas fa-exclamation-triangle"></i> By using this software, you agree to the <a
+                    href="https://github.com/GVCoder09/NoDPI#terms-of-use-and-disclaimer"
+                    style="color: rgba(255,255,255,0.5);">Terms of Use and Disclaimer</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Простая навигация
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Удаляем активный класс у всех ссылок
+                document.querySelectorAll('nav a').forEach(a => {
+                    a.classList.remove('active');
+                });
+
+                // Добавляем активный класс текущей ссылке
+                this.classList.add('active');
+
+                // Прокрутка к секции
+                const targetId = this.getAttribute('href');
+                if (targetId === '#home') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Обновление активной ссылки при прокрутке
+        window.addEventListener('scroll', function () {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('nav a').forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('href') === `#${current}`) {
+                    a.classList.add('active');
+                } else if (current === '' && a.getAttribute('href') === '#home') {
+                    a.classList.add('active');
+                }
+            });
+        });
+
+        // Мобильное меню
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
+            const nav = document.querySelector('nav ul');
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Автоматически скрывать мобильное меню при клике на ссылку
+        document.querySelectorAll('nav a').forEach(a => {
+            a.addEventListener('click', function () {
+                if (window.innerWidth <= 768) {
+                    document.querySelector('nav ul').style.display = 'none';
+                }
+            });
+        });
+
+        // Адаптивное меню
+        window.addEventListener('resize', function () {
+            if (window.innerWidth > 768) {
+                document.querySelector('nav ul').style.display = 'flex';
+            } else {
+                document.querySelector('nav ul').style.display = 'none';
+            }
+        });
+
+        // Инициализация для мобильных
+        if (window.innerWidth <= 768) {
+            document.querySelector('nav ul').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
