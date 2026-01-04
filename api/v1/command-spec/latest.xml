@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<command name="nodpi">
+    <description>DPI bypass proxy</description>
+    
+    <options>
+        <option>
+            <short>-h</short>
+            <long>--help</long>
+            <description>show this help message and exit</description>
+            <type>flag</type>
+        </option>
+        
+        <option>
+            <long>--host</long>
+            <argument>HOST</argument>
+            <description>Proxy host</description>
+            <type>string</type>
+        </option>
+        
+        <option>
+            <long>--port</long>
+            <argument>PORT</argument>
+            <description>Proxy port</description>
+            <type>integer</type>
+        </option>
+        
+        <option>
+            <long>--out-host</long>
+            <argument>OUT_HOST</argument>
+            <description>Outgoing proxy host</description>
+            <type>string</type>
+        </option>
+        
+        <mutually_exclusive_group>
+            <option>
+                <long>--blacklist</long>
+                <argument>BLACKLIST</argument>
+                <description>Path to blacklist file</description>
+                <type>file_path</type>
+            </option>
+            
+            <option>
+                <long>--no-blacklist</long>
+                <description>Use fragmentation for all domains</description>
+                <type>flag</type>
+            </option>
+            
+            <option>
+                <long>--autoblacklist</long>
+                <description>Automatic detection of blocked domains</description>
+                <type>flag</type>
+            </option>
+        </mutually_exclusive_group>
+        
+        <option>
+            <long>--fragment-method</long>
+            <argument>METHOD</argument>
+            <description>Fragmentation method (random by default)</description>
+            <type>enum</type>
+            <values>
+                <value>random</value>
+                <value>sni</value>
+            </values>
+            <default>random</default>
+        </option>
+        
+        <option>
+            <long>--domain-matching</long>
+            <argument>MODE</argument>
+            <description>Domain matching mode (strict by default)</description>
+            <type>enum</type>
+            <values>
+                <value>loose</value>
+                <value>strict</value>
+            </values>
+            <default>strict</default>
+        </option>
+        
+        <option>
+            <long>--log-access</long>
+            <argument>LOG_ACCESS</argument>
+            <description>Path to the access control log</description>
+            <type>file_path</type>
+        </option>
+        
+        <option>
+            <long>--log-error</long>
+            <argument>LOG_ERROR</argument>
+            <description>Path to log file for errors</description>
+            <type>file_path</type>
+        </option>
+        
+        <option>
+            <short>-q</short>
+            <long>--quiet</long>
+            <description>Remove UI output</description>
+            <type>flag</type>
+        </option>
+        
+        <mutually_exclusive_group>
+            <option>
+                <long>--install</long>
+                <description>Add proxy to Windows/Linux autostart (only for executable version)</description>
+                <type>flag</type>
+            </option>
+            
+            <option>
+                <long>--uninstall</long>
+                <description>Remove proxy from Windows/Linux autostart (only for executable version)</description>
+                <type>flag</type>
+            </option>
+        </mutually_exclusive_group>
+    </options>
+</command>
