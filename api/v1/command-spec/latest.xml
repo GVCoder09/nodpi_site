@@ -55,13 +55,13 @@
         <option>
             <long>--fragment-method</long>
             <argument>METHOD</argument>
-            <description>Fragmentation method (random by default)</description>
+            <description>Fragmentation method (sni by default)</description>
             <type>enum</type>
             <values>
                 <value>random</value>
                 <value>sni</value>
             </values>
-            <default>random</default>
+            <default>sni</default>
         </option>
         
         <option>
@@ -74,6 +74,20 @@
                 <value>strict</value>
             </values>
             <default>strict</default>
+        </option>
+        
+        <option>
+            <long>--auth-username</long>
+            <argument>AUTH_USERNAME</argument>
+            <description>Username for proxy authentication</description>
+            <type>string</type>
+        </option>
+        
+        <option>
+            <long>--auth-password</long>
+            <argument>AUTH_PASSWORD</argument>
+            <description>Password for proxy authentication</description>
+            <type>string</type>
         </option>
         
         <option>
@@ -94,6 +108,12 @@
             <short>-q</short>
             <long>--quiet</long>
             <description>Remove UI output</description>
+            <type>flag</type>
+        </option>
+        
+        <option>
+            <long>--start-in-tray</long>
+            <description>Start minimized to tray (Windows only)</description>
             <type>flag</type>
         </option>
         
